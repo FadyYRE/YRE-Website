@@ -7,4 +7,4 @@
  * While this is empty, the "Send request" button opens the visitor's email app
  * with the request pre-filled, so no message is ever lost.
  */
-export const FORM_ENDPOINT = '';
+export const FORM_ENDPOINT = 'https://formspree.io/f/xljbwgze';
