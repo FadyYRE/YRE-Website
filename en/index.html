@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Y/RE Development — Real estate development</title>
+<meta name="description" content="Y/RE Development is a Dutch real estate developer. Real estate development starts with understanding: what makes a place special, what people need and how a development can contribute to its surroundings.">
+<link rel="canonical" href="https://yre-development.nl/en">
+<link rel="alternate" hreflang="en" href="https://yre-development.nl/en">
+<link rel="alternate" hreflang="nl" href="https://yre-development.nl">
+<link rel="alternate" hreflang="x-default" href="https://yre-development.nl">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Y/RE Development">
+<meta property="og:title" content="Y/RE Development — Real estate development">
+<meta property="og:description" content="Y/RE Development is a Dutch real estate developer. Real estate development starts with understanding: what makes a place special, what people need and how a development can contribute to its surroundings.">
+<meta property="og:url" content="https://yre-development.nl/en">
+<meta property="og:image" content="https://yre-development.nl/assets/share-image.png">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/archivo-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans-var.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:'Archivo';src:url('/assets/fonts/archivo-var.woff') format('woff');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('/assets/fonts/instrument-sans-var.woff') format('woff');font-weight:400 700;font-stretch:75% 100%;font-style:normal;font-display:swap}
+body{margin:0;background:#F3F1EC}
+a{color:#121211;text-decoration:none}a:hover{color:#5F5B54}
+@keyframes yreUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes yreFade{from{opacity:0}to{opacity:1}}
+.yre-up{animation:yreUp 1.1s cubic-bezier(.2,.7,.1,1) both}
+.yre-d0{animation-delay:2.2s}.yre-d1{animation-delay:2.55s}.yre-d2{animation-delay:2.8s}.yre-d3{animation-delay:3.05s}
+.yre-fade{animation:yreFade 1.6s ease both;animation-delay:2.95s}
+@keyframes yreDraw{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes yreRise{from{transform:translateY(102%)}to{transform:none}}
+@keyframes yreWipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes yreTrack{from{clip-path:inset(0 100% 0 0);opacity:.2}to{clip-path:inset(0 0 0 0);opacity:1}}
+@keyframes yreLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.yre-logo{cursor:pointer;background:none;border:0;padding:0;margin:0;display:block}
+.yre-logo img{display:block;width:100%;height:auto}
+.yre-mask{position:absolute;overflow:hidden}
+
+.yre-a-yl{animation:yreRise .8s cubic-bezier(.7,0,.2,1) .1s both}
+.yre-a-yr{animation:yreRise .8s cubic-bezier(.7,0,.2,1) .18s both}
+.yre-a-slash{animation:yreDraw .75s cubic-bezier(.7,0,.2,1) .65s both}
+.yre-a-r{animation:yreWipe .85s cubic-bezier(.7,0,.2,1) 1.15s both}
+.yre-a-e1{animation:yreWipe .6s cubic-bezier(.7,0,.2,1) 1.25s both}
+.yre-a-e2{animation:yreWipe .6s cubic-bezier(.7,0,.2,1) 1.35s both}
+.yre-a-e3{animation:yreWipe .6s cubic-bezier(.7,0,.2,1) 1.45s both}
+.yre-a-dev{animation:yreTrack 1.1s cubic-bezier(.6,0,.2,1) 1.8s both}
+.yre-a-tag{animation:yreUp .9s cubic-bezier(.2,.7,.1,1) 2.25s both}
+.yre-panel{transition:flex-grow 1s cubic-bezier(.7,0,.2,1),flex-basis 1s cubic-bezier(.7,0,.2,1)}
+.yre-strip{all:unset;box-sizing:border-box;position:absolute;inset:0;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:28px 0 36px;transition:background .4s ease}
+.yre-strip:hover{background:rgba(243,241,236,.07)}
+.yre-strip:focus-visible{outline:2px solid #F3F1EC;outline-offset:-6px}
+.yre-vert{writing-mode:vertical-rl;transform:rotate(180deg)}
+@keyframes yreProg{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.yre-prog{transform-origin:left center;animation:yreProg 7s linear both}
+@keyframes yreSlide{0%{opacity:0;transform:scale(1.07)}4%{opacity:1}25%{opacity:1}29%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+@keyframes yreSlide3{0%{opacity:0;transform:scale(1.07)}5%{opacity:1}33.3%{opacity:1}38.3%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+@keyframes yreSlide5{0%{opacity:0;transform:scale(1.07)}3.5%{opacity:1}20%{opacity:1}23.5%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+@keyframes yreSlide7{0%{opacity:0;transform:scale(1.07)}2.4%{opacity:1}14.3%{opacity:1}16.7%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+@keyframes yreSlide6{0%{opacity:0;transform:scale(1.07)}2.7%{opacity:1}16.7%{opacity:1}19.4%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+.yre-slide{opacity:0;animation-name:yreSlide;animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both}
+.yre-open-in{animation:yreUp .9s cubic-bezier(.2,.7,.1,1) .35s both}
+@media (max-width: 860px){.yre-principles{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width: 520px){.yre-principles{grid-template-columns:minmax(0,1fr)!important}}
+@media (max-width: 760px){
+.yre-acc{flex-direction:column;height:auto!important}
+.yre-panel{flex:none!important;height:84px}
+.yre-panel.yre-panel-open{height:520px}
+.yre-strip{flex-direction:row;justify-content:flex-start;gap:20px;padding:0 20px}
+.yre-vert{writing-mode:horizontal-tb;transform:none}
+}
+.yre-line{transform-origin:left center;animation:yreLine 1.3s cubic-bezier(.7,0,.2,1) 2.35s both}
+.yre-img{overflow:hidden}
+.yre-fill{transition:transform 1.4s cubic-bezier(.2,.7,.1,1)}
+.yre-img:hover .yre-fill{transform:scale(1.025)}
+.yre-arrow{display:inline-block;transition:transform .5s cubic-bezier(.2,.7,.1,1)}
+a:hover .yre-arrow{transform:translateX(6px)}
+.yre-row{transition:background .4s ease}
+.yre-row:hover{background:#ECE9E2}
+@media (prefers-reduced-motion: reduce){.yre-up,.yre-fade,.yre-line,.yre-a-slash,.yre-a-yl,.yre-a-yr,.yre-a-r,.yre-a-e1,.yre-a-e2,.yre-a-e3,.yre-a-dev,.yre-a-tag,.yre-open-in,.yre-prog,.yre-slide{animation:none}@media (max-width: 600px){.yre-nav{gap:16px!important;font-size:13px!important;width:100%}.yre-nav>span:last-child{margin-left:auto}}}
+@media (max-width: 760px){.yre-phases{grid-template-columns:minmax(0,1fr)!important;row-gap:14px!important}.yre-phase{flex-direction:row!important;align-items:center!important;gap:14px!important}.yre-phase>span:first-child{margin-top:0!important;flex:none}.yre-phasetrack{display:none!important}}
+@keyframes yreMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.yre-marquee{overflow:hidden;max-width:100%;min-width:0;contain:paint;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.yre-marquee-track{display:flex;width:max-content;animation:yreMarquee 60s linear infinite}
+.yre-marquee:hover .yre-marquee-track{animation-play-state:paused}
+.yre-marquee-track>span{display:flex;align-items:center;white-space:nowrap}
+.yre-marquee-track i{font-style:normal;color:#A8A399;margin:0 clamp(18px,2.2vw,32px)}
+@media (prefers-reduced-motion: reduce){.yre-marquee{-webkit-mask-image:none;mask-image:none}.yre-marquee-track{animation:none;width:auto;flex-wrap:wrap}.yre-marquee-track>span{white-space:normal;flex-wrap:wrap;row-gap:8px}.yre-marquee-track>span[aria-hidden]{display:none}}
+@media (max-width: 760px){.yre-panel.yre-panel-open{height:100vw!important;max-height:600px}.yre-panel-open .yre-open-in{padding:20px 20px 22px!important;gap:0;justify-content:flex-end!important}.yre-panel-open .yre-open-in>div:first-child{display:none!important}.yre-panel-open .yre-open-in>div:last-child{gap:10px!important}.yre-panel-open .yre-open-in>div:last-child>div:first-child{gap:8px!important}.yre-panel-open .yre-open-in h3{font-size:clamp(30px,9vw,40px)!important}.yre-panel{height:64px}.yre-strip{padding:0 20px!important}}
+.yre-panel-link{position:absolute;inset:0;z-index:2;cursor:pointer}
+.yre-panel-link:focus-visible{outline:2px solid #F3F1EC;outline-offset:-6px}
+@media (hover: hover){.yre-panel-open .yre-slide,.yre-panel-open .yre-cover{transition:filter .4s ease}.yre-panel-open:hover .yre-slide,.yre-panel-open:hover .yre-cover{filter:brightness(1.06)}}
+.yre-panel:not(.yre-panel-open) img[src*="in-ontwikkeling"]{display:none!important}
+
+.yre-slider:has(img[src*="in-ontwikkeling"]) .yre-shade,.yre-panel-open:has(img[src*="in-ontwikkeling"]) .yre-shade{display:none!important}
+@media (max-width: 760px){img[src$="cartesius-in-ontwikkeling-nl.jpg"]{content:url(/assets/img/cartesius-in-ontwikkeling-nl-sq.jpg)}img[src$="cartesius-in-ontwikkeling-en.jpg"]{content:url(/assets/img/cartesius-in-ontwikkeling-en-sq.jpg)}}
+</style>
+<script type="module" src="/assets/services-en.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="padding: 40px 20px; font-family: system-ui, sans-serif">This website requires JavaScript. Contact us at <a href="mailto:info@yre-development.nl">info@yre-development.nl</a>.</p></noscript>
+<template id="dc-template">
+<div style="font-family: 'Instrument Sans', system-ui, sans-serif; color: #121211; background: #F3F1EC; -webkit-font-smoothing: antialiased">
+
+  <!-- Header -->
+  <header style="max-width: 1440px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+    <a href="#top" aria-label="Y/RE Development — home" style="display: flex; align-items: center">
+      <img src="/assets/img/brand/mark-black.png" alt="Y/RE" style="height: 22px; width: auto; display: block">
+    </a>
+    <nav class="yre-nav" aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(20px, 3vw, 44px); font-size: 14px; letter-spacing: 0.02em">
+      <a href="/en/projects">Projects</a>
+      <a href="/en/services">Our services</a>
+      <a href="/en/about">About</a>
+      <a href="/en/contact">Contact</a>
+      <span style="display: flex; gap: 8px; color: #5F5B54; font-size: 13px"><a href="/" lang="nl" style="color: #5F5B54">NL</a><span aria-hidden="true">/</span><a href="#top" aria-current="true" style="color: #121211">EN</a></span>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 9vw, 128px) clamp(20px, 4vw, 56px) 0; box-sizing: border-box">
+    <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 32px">
+      <button type="button" class="yre-logo" onClick="{{ replay }}" aria-label="Y/RE Development — Yassa Real Estate Development (replay logo animation)" title="Replay" style="position: relative; width: min(560px, 100%); aspect-ratio: 964 / 467">
+        <sc-if value="{{ play }}" hint-placeholder-val="{{ true }}">
+          <span class="yre-mask" aria-hidden="true" style="left: 0%; top: 0%; width: 16.079%"><img class="yre-a-yl" src="/assets/img/logo/y-left.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 12.656%; top: 0%; width: 22.199%"><img class="yre-a-yr" src="/assets/img/logo/y-right.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 23.548%; top: 0%; width: 22.614%"><img class="yre-a-slash" src="/assets/img/logo/slash.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 44.502%; top: 0%; width: 24.793%"><img class="yre-a-r" src="/assets/img/logo/r.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 72.095%; top: 52.248%; width: 27.282%"><img class="yre-a-e1" src="/assets/img/logo/e-bot.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 72.199%; top: 26.338%; width: 22.407%"><img class="yre-a-e2" src="/assets/img/logo/e-mid.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 72.095%; top: 0%; width: 27.282%"><img class="yre-a-e3" src="/assets/img/logo/e-top.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 1.867%; top: 74.518%; width: 98.133%"><img class="yre-a-dev" src="/assets/img/logo/development.png" alt=""></span>
+          <span class="yre-mask" aria-hidden="true" style="left: 1.763%; top: 94.861%; width: 96.784%; overflow: visible"><img class="yre-a-tag" src="/assets/img/logo/tagline.png" alt=""></span>
+        </sc-if>
+      </button>
+      <div class="yre-up yre-d0" style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5F5B54; text-align: left">
+        <span>Understand. Connect. Develop.</span>
+      </div>
+    </div>
+
+    <div style="height: 1px; background: #121211; margin: clamp(48px, 7vw, 96px) 0 clamp(40px, 5vw, 64px)" class="yre-line"></div>
+
+    <h1 class="yre-up yre-d1" style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 88%; font-size: clamp(46px, 7.6vw, 116px); line-height: 0.98; letter-spacing: -0.035em; max-width: 1180px">Real estate development starts with understanding.</h1>
+
+    <div class="yre-up yre-d2" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; margin-top: clamp(40px, 5vw, 72px)">
+      <p style="margin: 0; max-width: 600px; font-size: clamp(18px, 1.5vw, 21px); line-height: 1.5; color: #121211">Understanding what makes a place special, what people need and how a development can contribute to its surroundings. We translate these insights into well-considered development plans where spatial quality, value in use and economic feasibility come together. In this way we create lasting value for people and their surroundings.</p>    </div>
+  </section>
+
+  <!-- Selected projects — accordion -->
+  <section id="projects" class="yre-fade" style="margin-top: clamp(72px, 9vw, 128px)">
+    <div style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px) 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 24px">
+      <div style="display: flex; align-items: baseline; gap: 20px; flex-wrap: wrap">
+        <span style="font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 90%; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.01em">From vision to development.</span>
+      </div>
+      <a href="/en/projects" style="display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-size: 15px; font-weight: 500; border-bottom: 1px solid #121211; padding-bottom: 4px">All projects</a>
+    </div>
+
+    <div class="yre-acc" onMouseEnter="{{ pause }}" onMouseLeave="{{ resume }}" style="display: flex; gap: 2px; height: clamp(420px, min(82vh, 56vw), 860px); background: #F3F1EC">
+      <sc-for list="{{ items }}" as="item" hint-placeholder-count="4">
+        <div class="{{ item.cls }}" style="position: relative; overflow: hidden; min-width: 0; background: {{ item.bg }}; color: #F3F1EC; {{ item.flexStyle }}">
+
+          <sc-if value="{{ item.hasImg }}" hint-placeholder-val="{{ false }}">
+            <img class="yre-cover" src="{{ item.cover }}" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+          </sc-if>
+
+          <sc-if value="{{ item.open }}" hint-placeholder-val="{{ true }}">
+            <sc-for list="{{ item.slides }}" as="s" hint-placeholder-count="0">
+              <img class="yre-slide" src="{{ s.src }}" alt="{{ s.alt }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; animation-name: {{ s.anim }}; animation-duration: {{ s.dur }}; animation-delay: {{ s.delay }}; animation-play-state: {{ item.playState }}">
+            </sc-for>
+            <sc-if value="{{ item.hasImg }}" hint-placeholder-val="{{ false }}">
+              <div class="yre-shade" aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,18,17,0.74) 0%, rgba(18,18,17,0) 52%), linear-gradient(to bottom, rgba(18,18,17,0.42) 0%, rgba(18,18,17,0) 24%)"></div>
+            </sc-if>
+            <div class="yre-open-in" style="position: absolute; inset: 0; padding: clamp(24px, 3vw, 44px); box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between">
+              <div style="display: flex; align-items: center; gap: 28px; font-size: 13px; letter-spacing: 0.06em">
+                <span style="display: inline-flex; align-items: center; gap: 8px; text-transform: uppercase; color: #D6D2CA">
+                  <svg width="11" height="15" viewBox="0 0 12 16" aria-hidden="true" style="flex: none; color: #F3F1EC"><path fill="currentColor" fill-rule="evenodd" d="M6 0C2.69 0 0 2.62 0 5.86 0 10.1 6 16 6 16s6-5.9 6-10.14C12 2.62 9.31 0 6 0zm0 8.4a2.55 2.55 0 1 1 0-5.1 2.55 2.55 0 0 1 0 5.1z"></path></svg>
+                  {{ item.place }}
+                </span>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 28px">
+                <div style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+                  <h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 86%; font-size: clamp(36px, 4.4vw, 68px); line-height: 0.95; letter-spacing: -0.035em">{{ item.name }}</h3>
+                  <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #D6D2CA">{{ item.meta }}</span>
+                <sc-if value="{{ item.hasCredit }}" hint-placeholder-val="{{ false }}"><span style="margin-top: -6px; font-size: 12px; line-height: 1.5; letter-spacing: 0.01em; color: #D6D2CA; text-shadow: 0 1px 8px rgba(18,18,17,0.5)">{{ item.credit }}</span></sc-if>
+                </div>
+              </div>
+            </div>
+            <sc-if value="{{ item.hasPage }}" hint-placeholder-val="{{ true }}"><a class="yre-panel-link" href="{{ item.href }}" aria-label="View project: {{ item.name }}"></a></sc-if>
+            <div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 3px; opacity: 0; pointer-events: none">
+              <div class="yre-prog" onAnimationEnd="{{ item.next }}" style="height: 100%; background: #F3F1EC; animation-duration: {{ item.dur }}; animation-play-state: {{ item.playState }}"></div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ item.closed }}" hint-placeholder-val="{{ false }}">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(18,18,17,0.5)"></div>
+            <button type="button" class="yre-strip" onClick="{{ item.pick }}" aria-label="{{ item.label }}">
+              <span class="yre-vert" style="font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 90%; font-size: clamp(18px, 1.6vw, 24px); letter-spacing: -0.01em; white-space: nowrap">{{ item.stripName }}</span>
+            </button>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section id="development" style="max-width: 1440px; margin: 0 auto; padding: clamp(112px, 14vw, 200px) clamp(20px, 4vw, 56px) 0; box-sizing: border-box">
+    <div style="display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 80px)">
+      <div style="flex: 9 1 560px; min-width: 0">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 90%; font-size: clamp(30px, 3.6vw, 54px); line-height: 1.08; letter-spacing: -0.025em; max-width: 960px">Spotting spatial opportunities. Unlocking development potential.</h2>
+        <p style="margin: 24px 0 0; font-size: clamp(18px, 1.5vw, 21px); line-height: 1.5; max-width: 640px">We connect location, programme, market and feasibility to turn opportunities into well-founded development choices at an early stage.</p>
+      </div>
+    </div>
+
+    <div class="yre-principles" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: clamp(20px, 2.5vw, 40px); row-gap: 40px; margin-top: clamp(64px, 7vw, 112px); border-top: 1px solid #121211">
+      <div style="flex: 1 1 240px; min-width: 0; padding: 28px 32px 0 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: 26px; letter-spacing: -0.015em">Place</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 280px">Reading the site and its surroundings to find what a location can carry.</p>
+      </div>
+      <div style="flex: 1 1 240px; min-width: 0; padding: 28px 32px 0 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: 26px; letter-spacing: -0.015em">Programme</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 280px">Defining the right mix of uses, scale and typologies for this site and its future users.</p>
+      </div>
+      <div style="flex: 1 1 240px; min-width: 0; padding: 28px 32px 0 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: 26px; letter-spacing: -0.015em">Market</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 280px">Weighing market demand, user needs and social developments early on to arrive at a future-proof development concept.</p>
+      </div>
+      <div style="flex: 1 1 240px; min-width: 0; padding: 28px 32px 0 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: 26px; letter-spacing: -0.015em">Feasibility</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 280px">Developing the business case alongside the spatial concept, allowing quality and feasibility to inform each other from the start.</p>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div style="margin-top: clamp(96px, 11vw, 160px)">
+      <h2 style="margin: 0 0 28px; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 90%; font-size: clamp(30px, 3.4vw, 50px); letter-spacing: -0.025em; line-height: 1.05" id="services">Our services</h2>
+      <yre-services mode="home"></yre-services>
+    </div>
+    <!-- Partners -->
+    <div style="margin-top: clamp(96px, 11vw, 160px); min-width: 0; max-width: 100%">
+      <div style="border-top: 1px solid #121211; padding-top: clamp(28px, 3vw, 40px); display: flex; flex-direction: column; align-items: flex-start; gap: 14px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 90%; font-size: clamp(30px, 3.4vw, 50px); letter-spacing: -0.025em; line-height: 1.05">Experience with leading parties in the real estate sector</h2>
+      </div>
+      <div class="yre-marquee" role="region" aria-label="Parties we have worked with" style="margin-top: clamp(36px, 4vw, 56px); padding: clamp(22px, 2.6vw, 34px) 0; border-top: 1px solid #CFCAC0; border-bottom: 1px solid #CFCAC0">
+        <div class="yre-marquee-track" style="font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 92%; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -0.01em">
+          <span>Gemeente Utrecht<i aria-hidden="true">·</i>CBRE<i aria-hidden="true">·</i>Portaal<i aria-hidden="true">·</i>MRP Development<i aria-hidden="true">·</i>Ballast Nedam Development<i aria-hidden="true">·</i>MVRDV<i aria-hidden="true">·</i>KCAP<i aria-hidden="true">·</i>Mecanoo<i aria-hidden="true">·</i>LBP|SIGHT<i aria-hidden="true">·</i>Van Rossum<i aria-hidden="true">·</i>Yver Techniek<i aria-hidden="true">·</i>SKAAL<i aria-hidden="true">·</i>Heddes<i aria-hidden="true">·</i></span><span aria-hidden="true">Gemeente Utrecht<i aria-hidden="true">·</i>CBRE<i aria-hidden="true">·</i>Portaal<i aria-hidden="true">·</i>MRP Development<i aria-hidden="true">·</i>Ballast Nedam Development<i aria-hidden="true">·</i>MVRDV<i aria-hidden="true">·</i>KCAP<i aria-hidden="true">·</i>Mecanoo<i aria-hidden="true">·</i>LBP|SIGHT<i aria-hidden="true">·</i>Van Rossum<i aria-hidden="true">·</i>Yver Techniek<i aria-hidden="true">·</i>SKAAL<i aria-hidden="true">·</i>Heddes<i aria-hidden="true">·</i></span>
+        </div>
+      </div>
+      <p style="margin: 18px 0 0; font-size: 13px; color: #5F5B54">Collaborations from previous projects and positions.</p>
+    </div>
+  </section>
+
+  <!-- Contact band + footer -->
+  <section style="margin-top: clamp(112px, 12vw, 176px); background: #121211; color: #F3F1EC">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(72px, 8vw, 120px) clamp(20px, 4vw, 56px) clamp(48px, 5vw, 72px); box-sizing: border-box">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 40px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 88%; font-size: clamp(40px, 5.4vw, 84px); line-height: 0.98; letter-spacing: -0.035em; max-width: 880px">Have a project, site or idea? Let’s look at it together.</h2>
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px">
+          <a href="/en/contact" style="color: #F3F1EC; display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-size: 15px; font-weight: 500; border-bottom: 1px solid #F3F1EC; padding-bottom: 4px">Get in touch</a>
+          <a href="mailto:info@yre-development.nl" style="color: #D6D2CA; display: inline-flex; align-items: center; min-height: 44px; font-size: 15px">info@yre-development.nl</a>
+        </div>
+      </div>
+      <footer style="margin-top: clamp(72px, 8vw, 120px); padding-top: 28px; border-top: 1px solid #3A3935; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; font-size: 13px; color: #A8A399">
+        <a href="/en" aria-label="Y/RE Development — home"><img src="/assets/img/brand/mark-white.png" alt="Y/RE" style="height: 20px; width: auto; display: block"></a>
+        <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 28px">
+          <a href="/en/projects" style="color: #D6D2CA">Projects</a>
+          <a href="/en/services" style="color: #D6D2CA">Our services</a>
+          <a href="/en/about" style="color: #D6D2CA">About</a>
+          <a href="/en/contact" style="color: #D6D2CA">Contact</a>
+          <a href="/en/privacy" style="color: #D6D2CA">Privacy</a>
+        </nav>
+        <span>© 2026 Y/RE Development · KvK 94645108</span>
+      </footer>
+    </div>
+  </section>
+
+</div>
+</template>
+<script type="module">
+import { DCLogic, mount } from '/assets/dc.js';
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { play: true, active: 0, paused: false };
+    this.projects = [
+      { n: '01', href: '/en/projects/koolkiel', name: 'KoolKiel', credit: 'Design: MVRDV · Image: © MVRDV', place: 'Kiel, DE', meta: 'Kiel — Under construction', role: 'Delegated Development', bg: '#33312D',
+        images: [
+          { src: '/assets/img/koolkiel/kk-1.jpg', alt: 'KoolKiel tower of stacked, lit volumes at dusk seen from a park' },
+          { src: '/assets/img/koolkiel/kk-2.jpg', alt: 'Aerial view of KoolKiel with two towers and a long block topped by colourful roofs beside a tram line' },
+          { src: '/assets/img/koolkiel/kk-3.jpg', alt: 'Street view of the KoolKiel towers with a tram stop in the foreground' }
+        ] },
+      { n: '02', href: '/en/projects/ikaria', name: 'Ikaria', strip: 'Cartesius · Ikaria', place: 'Utrecht, NL — Cartesius', meta: 'Cartesius Utrecht — Pre-construction', role: 'Delegated Development', bg: '#151515',
+        images: [
+          { src: '/assets/img/cartesius-in-ontwikkeling-en.jpg', alt: 'Ikaria — in development' }
+        ] },
+      { n: '03', href: '/en/projects/sub-area-7', name: 'Sub-area 7', strip: 'Cartesius · Sub-area 7', place: 'Utrecht, NL — Cartesius', meta: 'Cartesius Utrecht — In development', role: 'Delegated Development', bg: '#151515',
+        images: [
+          { src: '/assets/img/cartesius-in-ontwikkeling-en.jpg', alt: 'Sub-area 7 — in development' }
+        ] },
+      { n: '04', href: '/en/projects/sub-area-8', name: 'Sub-area 8', strip: 'Cartesius · Sub-area 8', place: 'Utrecht, NL — Cartesius', meta: 'Cartesius Utrecht — In development', role: 'Delegated Development', bg: '#151515',
+        images: [
+          { src: '/assets/img/cartesius-in-ontwikkeling-en.jpg', alt: 'Sub-area 8 — in development' }
+        ] }
+    ];
+  }
+  componentWillUnmount() {
+    clearTimeout(this._t);
+  }
+  renderVals() {
+    const a = this.state.active || 0;
+    const count = this.projects.length;
+    const playState = this.state.paused ? 'paused' : 'running';
+    const next = () => this.setState((s) => ({ active: ((s.active || 0) + 1) % count }));
+    const SLIDE = 4;
+    const items = this.projects.map((p, i) => ({
+      ...p,
+      stripName: p.strip || p.name,
+      hasPage: !!p.href,
+      hasCredit: !!p.credit,
+      hasImg: !!(p.images && p.images.length),
+      noImg: !(p.images && p.images.length),
+      cover: p.images && p.images.length ? p.images[0].src : '',
+      dur: p.images && p.images.length > 1 ? (p.images.length * SLIDE) + 's' : '7s',
+      slides: (p.images || []).length > 1 ? p.images.map((img, k) => ({
+        src: img.src,
+        alt: img.alt,
+        dur: (p.images.length * SLIDE) + 's',
+        anim: p.images.length === 4 ? 'yreSlide' : 'yreSlide' + p.images.length,
+        delay: (k * SLIDE) + 's'
+      })) : [],
+      open: i === a,
+      closed: i !== a,
+      cls: i === a ? 'yre-panel yre-panel-open' : 'yre-panel',
+      flexStyle: i === a ? 'flex-grow: 1; flex-basis: 0px' : 'flex-grow: 0; flex-basis: clamp(64px, 8vw, 128px)',
+      label: 'Show project ' + p.n,
+      pick: () => this.setState({ active: i }),
+      next: next,
+      playState: playState
+    }));
+    return {
+      items: items,
+      pause: () => this.setState({ paused: true }),
+      resume: () => this.setState({ paused: false }),
+      play: this.state.play,
+      replay: () => {
+        clearTimeout(this._t);
+        this.setState({ play: false });
+        this._t = setTimeout(() => this.setState({ play: true }), 40);
+      }
+    };
+  }
+}
+
+mount(Component, {});
+</script>
+</body>
+</html>

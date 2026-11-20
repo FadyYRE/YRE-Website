@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Over ons — Y/RE Development</title>
+<meta name="description" content="Y/RE Development ontwikkelt met oog voor mens en omgeving en ondersteunt ontwikkelaars, grondeigenaren en investeerders van initiatief tot realisatievoorbereiding.">
+<link rel="canonical" href="https://yre-development.nl/over-ons">
+<link rel="alternate" hreflang="en" href="https://yre-development.nl/en/about">
+<link rel="alternate" hreflang="nl" href="https://yre-development.nl/over-ons">
+<link rel="alternate" hreflang="x-default" href="https://yre-development.nl/over-ons">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Y/RE Development">
+<meta property="og:title" content="Over ons — Y/RE Development">
+<meta property="og:description" content="Y/RE Development ontwikkelt met oog voor mens en omgeving en ondersteunt ontwikkelaars, grondeigenaren en investeerders van initiatief tot realisatievoorbereiding.">
+<meta property="og:url" content="https://yre-development.nl/over-ons">
+<meta property="og:image" content="https://yre-development.nl/assets/share-image.png">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/archivo-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans-var.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:'Archivo';src:url('/assets/fonts/archivo-var.woff') format('woff');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('/assets/fonts/instrument-sans-var.woff') format('woff');font-weight:400 700;font-stretch:75% 100%;font-style:normal;font-display:swap}
+body{margin:0;background:#F3F1EC}
+a{color:#121211;text-decoration:none}a:hover{color:#5F5B54}
+@keyframes yreUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes yreLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes yreReveal{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+.yre-up{animation:yreUp 1.1s cubic-bezier(.2,.7,.1,1) both}
+.yre-d1{animation-delay:.15s}.yre-d2{animation-delay:.3s}.yre-d3{animation-delay:.45s}
+.yre-line{transform-origin:left center;animation:yreLine 1.3s cubic-bezier(.7,0,.2,1) .2s both}
+.yre-reveal{animation:yreReveal 1.3s cubic-bezier(.7,0,.2,1) .2s both}
+.yre-arrow{display:inline-block;transition:transform .5s cubic-bezier(.2,.7,.1,1)}
+a:hover .yre-arrow{transform:translateX(6px)}
+@media (prefers-reduced-motion: reduce){.yre-up,.yre-line,.yre-reveal{animation:none}.yre-arrow{transition:none}}
+@media (max-width: 600px){.yre-nav{gap:16px!important;font-size:13px!important;width:100%}.yre-nav>span:last-child{margin-left:auto}}
+@media (max-width: 760px){.yre-phases{grid-template-columns:minmax(0,1fr)!important;row-gap:14px!important}.yre-phase{flex-direction:row!important;align-items:center!important;gap:14px!important}.yre-phase>span:first-child{margin-top:0!important;flex:none}.yre-phasetrack{display:none!important}}
+@keyframes yreMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.yre-marquee{overflow:hidden;max-width:100%;min-width:0;contain:paint;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.yre-marquee-track{display:flex;width:max-content;animation:yreMarquee 60s linear infinite}
+.yre-marquee:hover .yre-marquee-track{animation-play-state:paused}
+.yre-marquee-track>span{display:flex;align-items:center;white-space:nowrap}
+.yre-marquee-track i{font-style:normal;color:#A8A399;margin:0 clamp(18px,2.2vw,32px)}
+@media (prefers-reduced-motion: reduce){.yre-marquee{-webkit-mask-image:none;mask-image:none}.yre-marquee-track{animation:none;width:auto;flex-wrap:wrap}.yre-marquee-track>span{white-space:normal;flex-wrap:wrap;row-gap:8px}.yre-marquee-track>span[aria-hidden]{display:none}}
+@media (max-width: 760px){.yre-portrait{min-height:0!important;aspect-ratio:1 / 1}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="padding: 40px 20px; font-family: system-ui, sans-serif">Deze website gebruikt JavaScript. Neem contact op via <a href="mailto:info@yre-development.nl">info@yre-development.nl</a>.</p></noscript>
+<template id="dc-template">
+<div style="font-family: 'Instrument Sans', system-ui, sans-serif; color: #121211; background: #F3F1EC; -webkit-font-smoothing: antialiased">
+
+  <!-- Header -->
+  <header style="max-width: 1440px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+    <a href="/" aria-label="Y/RE Development — startpagina" style="display: flex; align-items: center">
+      <img src="/assets/img/brand/mark-black.png" alt="Y/RE" style="height: 22px; width: auto; display: block">
+    </a>
+    <nav class="yre-nav" aria-label="Hoofdmenu" style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(20px, 3vw, 44px); font-size: 14px; letter-spacing: 0.02em">
+      <a href="/projecten">Projecten</a>
+      <a href="/diensten">Onze diensten</a>
+      <a href="/over-ons" aria-current="page" style="border-bottom: 1px solid #121211; padding-bottom: 2px">Over ons</a>
+      <a href="/contact">Contact</a>
+      <span style="display: flex; gap: 8px; color: #5F5B54; font-size: 13px"><a href="#top" aria-current="true" style="color: #121211">NL</a><span aria-hidden="true">/</span><a href="/en/about" lang="en" style="color: #5F5B54">EN</a></span>
+    </nav>
+  </header>
+
+  <!-- Intro label -->
+  <section id="top" style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 8vw, 112px) clamp(20px, 4vw, 56px) 0; box-sizing: border-box">
+    <div class="yre-line" style="height: 1px; background: #121211; margin: 28px 0 clamp(48px, 5vw, 72px)"></div>
+
+    <!-- Portrait + text -->
+    <div style="display: flex; flex-wrap: wrap; gap: clamp(40px, 6vw, 104px); align-items: stretch">
+      <div class="yre-reveal yre-portrait" style="flex: 5 1 340px; min-width: 0; overflow: hidden; position: relative; min-height: 480px">
+        <img src="/assets/img/about/founder.jpg" alt="Portret van Fady Yassa, oprichter van Y/RE Development" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; background: #E6E3DD">
+      </div>
+      <div style="flex: 7 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+        <h1 class="yre-up yre-d1" style="margin: -0.12em 0 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 88%; font-size: clamp(40px, 5vw, 76px); line-height: 1; letter-spacing: -0.035em; max-width: 700px">Ontwikkelen met oog voor mens en omgeving.</h1>
+        <p class="yre-up yre-d2" style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 560px">Vastgoed is meer dan een gebouw. Het vormt de omgeving waarin mensen wonen, werken en samenleven. Bij Y/RE Development geloven we dat waardevolle ontwikkelingen ontstaan door de kwaliteiten van een plek, de behoeften van haar gebruikers en economische haalbaarheid met elkaar te verbinden.</p>
+        <p class="yre-up yre-d2" style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 560px">Vanuit deze visie ondersteunen we ontwikkelaars, grondeigenaren en investeerders bij het vertalen van ruimtelijke kansen en ambities naar haalbare ontwikkelplannen. Van de eerste verkenning en ontwikkelstrategie tot ontwerp, vergunning en realisatievoorbereiding.</p>
+        <p class="yre-up yre-d3" style="margin: 0; font-size: 18px; line-height: 1.6; max-width: 560px">Opgericht door Fady Yassa, brengt Y/RE een achtergrond in architectuur en vastgoedontwikkeling samen. Hierdoor benaderen we ontwikkelvraagstukken zowel vanuit ruimtelijk perspectief als vanuit economische haalbaarheid.</p>
+        <div class="yre-up yre-d3" style="margin-top: auto; display: flex; flex-direction: column; gap: 4px; border-top: 1px solid #CFCAC0; padding-top: 20px">
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em">Fady Yassa</span>
+          <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5F5B54">Oprichter</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration -->
+  <section style="max-width: 1440px; margin: 0 auto; padding: clamp(96px, 11vw, 160px) clamp(20px, 4vw, 56px) 0; box-sizing: border-box">
+    <div style="border-top: 1px solid #121211; padding-top: clamp(28px, 3vw, 40px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px clamp(40px, 6vw, 96px)">
+      <h2 style="flex: 1 1 380px; min-width: 0; max-width: 620px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 90%; font-size: clamp(30px, 3.4vw, 50px); letter-spacing: -0.025em; line-height: 1.05">Sterke ontwikkelingen vragen om samenwerking.</h2>
+      <div style="flex: 1 1 380px; min-width: 0; max-width: 560px; display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 560px">Vastgoedontwikkeling vraagt om het verbinden van verschillende disciplines, belangen en ambities.</p>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 560px">Bij Y/RE geloven we in de kracht van samenwerking. Vanuit onze ervaring met gemeenten, ontwikkelaars, beleggers, woningcorporaties en gerenommeerde ontwerp- en adviesbureaus brengen we verschillende expertises en belangen samen.</p>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 560px">Deze multidisciplinaire benadering vormt de basis van onze werkwijze, waarin ruimtelijke kwaliteit, technische maakbaarheid en economische haalbaarheid samenkomen.</p>
+      </div>
+    </div>
+    <div style="margin-top: clamp(56px, 6vw, 88px); min-width: 0; max-width: 100%">
+      <span style="display: block; font-size: 15px; color: #5F5B54">Ervaring met toonaangevende partijen binnen de vastgoedsector:</span>
+      <div class="yre-marquee" role="region" aria-label="Partijen waarmee is samengewerkt" style="margin-top: 20px; padding: clamp(22px, 2.6vw, 34px) 0; border-top: 1px solid #CFCAC0; border-bottom: 1px solid #CFCAC0">
+        <div class="yre-marquee-track" style="font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 92%; font-size: clamp(22px, 2.4vw, 34px); letter-spacing: -0.01em">
+          <span>Gemeente Utrecht<i aria-hidden="true">·</i>CBRE<i aria-hidden="true">·</i>Portaal<i aria-hidden="true">·</i>MRP Development<i aria-hidden="true">·</i>Ballast Nedam Development<i aria-hidden="true">·</i>MVRDV<i aria-hidden="true">·</i>KCAP<i aria-hidden="true">·</i>Mecanoo<i aria-hidden="true">·</i>LBP|SIGHT<i aria-hidden="true">·</i>Van Rossum<i aria-hidden="true">·</i>Yver Techniek<i aria-hidden="true">·</i>SKAAL<i aria-hidden="true">·</i>Heddes<i aria-hidden="true">·</i></span><span aria-hidden="true">Gemeente Utrecht<i aria-hidden="true">·</i>CBRE<i aria-hidden="true">·</i>Portaal<i aria-hidden="true">·</i>MRP Development<i aria-hidden="true">·</i>Ballast Nedam Development<i aria-hidden="true">·</i>MVRDV<i aria-hidden="true">·</i>KCAP<i aria-hidden="true">·</i>Mecanoo<i aria-hidden="true">·</i>LBP|SIGHT<i aria-hidden="true">·</i>Van Rossum<i aria-hidden="true">·</i>Yver Techniek<i aria-hidden="true">·</i>SKAAL<i aria-hidden="true">·</i>Heddes<i aria-hidden="true">·</i></span>
+        </div>
+      </div>
+      <p style="margin: 18px 0 0; font-size: 13px; color: #5F5B54">Samenwerkingen vanuit eerdere projecten en dienstverbanden.</p>
+    </div>
+  </section>
+
+  <!-- Link to services -->
+  <section style="max-width: 1440px; margin: 0 auto; padding: clamp(48px, 6vw, 88px) clamp(20px, 4vw, 56px) 0; box-sizing: border-box; display: flex; justify-content: flex-end">
+    <a href="/diensten" style="display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-size: 15px; font-weight: 500; border-bottom: 1px solid #121211; padding-bottom: 4px">Onze werkwijze</a>
+  </section>
+
+  <!-- Contact band + footer -->
+  <section style="margin-top: clamp(112px, 12vw, 176px); background: #121211; color: #F3F1EC">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(72px, 8vw, 120px) clamp(20px, 4vw, 56px) clamp(48px, 5vw, 72px); box-sizing: border-box">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 40px">
+        <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 88%; font-size: clamp(40px, 5.4vw, 84px); line-height: 0.98; letter-spacing: -0.035em; max-width: 880px">Een project, locatie of idee? Laten we er samen naar kijken.</h2>
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px">
+          <a href="/contact" style="color: #F3F1EC; display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-size: 15px; font-weight: 500; border-bottom: 1px solid #F3F1EC; padding-bottom: 4px">Neem contact op</a>
+          <a href="mailto:info@yre-development.nl" style="color: #D6D2CA; display: inline-flex; align-items: center; min-height: 44px; font-size: 15px">info@yre-development.nl</a>
+        </div>
+      </div>
+      <footer style="margin-top: clamp(72px, 8vw, 120px); padding-top: 28px; border-top: 1px solid #3A3935; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; font-size: 13px; color: #A8A399">
+        <a href="/" aria-label="Y/RE Development — startpagina"><img src="/assets/img/brand/mark-white.png" alt="Y/RE" style="height: 20px; width: auto; display: block"></a>
+        <nav aria-label="Voettekst" style="display: flex; flex-wrap: wrap; gap: 28px">
+          <a href="/projecten" style="color: #D6D2CA">Projecten</a>
+          <a href="/diensten" style="color: #D6D2CA">Onze diensten</a>
+          <a href="/over-ons" style="color: #D6D2CA">Over ons</a>
+          <a href="/contact" style="color: #D6D2CA">Contact</a>
+          <a href="/privacy" style="color: #D6D2CA">Privacy</a>
+        </nav>
+        <span>© 2026 Y/RE Development · KvK 94645108</span>
+      </footer>
+    </div>
+  </section>
+
+</div>
+</template>
+<script type="module">
+import { DCLogic, mount } from '/assets/dc.js';
+
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+
+mount(Component, {});
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacyverklaring — Y/RE Development</title>
+<meta name="description" content="Hoe Y/RE Development omgaat met de persoonsgegevens die u via deze website deelt.">
+<link rel="canonical" href="https://yre-development.nl/privacy">
+<link rel="alternate" hreflang="en" href="https://yre-development.nl/en/privacy">
+<link rel="alternate" hreflang="nl" href="https://yre-development.nl/privacy">
+<link rel="alternate" hreflang="x-default" href="https://yre-development.nl/privacy">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Y/RE Development">
+<meta property="og:title" content="Privacyverklaring — Y/RE Development">
+<meta property="og:description" content="Hoe Y/RE Development omgaat met de persoonsgegevens die u via deze website deelt.">
+<meta property="og:url" content="https://yre-development.nl/privacy">
+<meta property="og:image" content="https://yre-development.nl/assets/share-image.png">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/archivo-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans-var.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:'Archivo';src:url('/assets/fonts/archivo-var.woff') format('woff');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('/assets/fonts/instrument-sans-var.woff') format('woff');font-weight:400 700;font-stretch:75% 100%;font-style:normal;font-display:swap}
+body{margin:0;background:#F3F1EC}
+a{color:#121211;text-decoration:none}a:hover{color:#5F5B54}
+@keyframes yreUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes yreLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.yre-up{animation:yreUp 1.1s cubic-bezier(.2,.7,.1,1) both}
+.yre-d1{animation-delay:.15s}.yre-d2{animation-delay:.3s}.yre-d3{animation-delay:.45s}
+.yre-line{transform-origin:left center;animation:yreLine 1.3s cubic-bezier(.7,0,.2,1) .2s both}
+.yre-arrow{display:inline-block;transition:transform .5s cubic-bezier(.2,.7,.1,1)}
+a:hover .yre-arrow,button:hover .yre-arrow{transform:translateX(6px)}
+.yre-field{display:flex;flex-direction:column;gap:10px;min-width:0}
+.yre-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#5F5B54}
+.yre-input{all:unset;box-sizing:border-box;width:100%;font-family:'Instrument Sans',system-ui,sans-serif;font-size:19px;line-height:1.4;color:#121211;padding:10px 0 14px;border-bottom:1px solid #A8A399;transition:border-color .3s ease}
+.yre-input:hover{border-bottom-color:#5F5B54}
+.yre-input:focus{border-bottom-color:#121211;box-shadow:0 1px 0 0 #121211}
+.yre-input::placeholder{color:#8C877E}
+textarea.yre-input{min-height:140px;resize:vertical;white-space:pre-wrap}
+select.yre-input{cursor:pointer;padding-right:28px}
+.yre-input[aria-invalid="true"]{border-bottom-color:#9B2C1F}
+.yre-err{font-size:13px;color:#9B2C1F}
+.yre-check{width:20px;height:20px;margin:2px 0 0;accent-color:#121211;flex:none;cursor:pointer}
+.yre-submit{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:16px;min-height:56px;padding:0 28px;background:#121211;color:#F3F1EC;font-size:15px;font-weight:500;letter-spacing:.04em;transition:background .3s ease}
+.yre-submit:hover{background:#2E2D2A}
+.yre-submit:focus-visible{outline:2px solid #121211;outline-offset:3px}
+.yre-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(24px,3vw,48px);row-gap:40px}
+.yre-span2{grid-column:1 / -1}
+@media (max-width: 640px){.yre-form-grid{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion: reduce){.yre-up,.yre-line{animation:none}.yre-arrow,.yre-input,.yre-submit{transition:none}}
+@media (max-width: 600px){.yre-nav{gap:16px!important;font-size:13px!important;width:100%}.yre-nav>span:last-child{margin-left:auto}}
+@media (max-width: 760px){.yre-phases{grid-template-columns:minmax(0,1fr)!important;row-gap:14px!important}.yre-phase{flex-direction:row!important;align-items:center!important;gap:14px!important}.yre-phase>span:first-child{margin-top:0!important;flex:none}.yre-phasetrack{display:none!important}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="padding: 40px 20px; font-family: system-ui, sans-serif">Deze website gebruikt JavaScript. Neem contact op via <a href="mailto:info@yre-development.nl">info@yre-development.nl</a>.</p></noscript>
+<template id="dc-template">
+<div style="font-family: 'Instrument Sans', system-ui, sans-serif; color: #121211; background: #F3F1EC; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column">
+
+  <!-- Header -->
+  <header style="width: 100%; max-width: 1440px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+    <a href="/" aria-label="Y/RE Development — startpagina" style="display: flex; align-items: center">
+      <img src="/assets/img/brand/mark-black.png" alt="Y/RE" style="height: 22px; width: auto; display: block">
+    </a>
+    <nav class="yre-nav" aria-label="Hoofdmenu" style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(20px, 3vw, 44px); font-size: 14px; letter-spacing: 0.02em">
+      <a href="/projecten">Projecten</a>
+      <a href="/diensten">Onze diensten</a>
+      <a href="/over-ons">Over ons</a>
+      <a href="/contact">Contact</a>
+      <span style="display: flex; gap: 8px; color: #5F5B54; font-size: 13px"><a href="#top" aria-current="true" style="color: #121211">NL</a><span aria-hidden="true">/</span><a href="/en/privacy" lang="en" style="color: #5F5B54">EN</a></span>
+    </nav>
+  </header>
+
+  <!-- Privacy -->
+  <section id="top" style="width: 100%; max-width: 1440px; margin: 0 auto; padding: clamp(56px, 8vw, 112px) clamp(20px, 4vw, 56px) 0; box-sizing: border-box">
+    <div class="yre-line" style="height: 1px; background: #121211; margin: 28px 0 clamp(36px, 4vw, 56px)"></div>
+    <h1 class="yre-up yre-d1" style="margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-stretch: 88%; font-size: clamp(40px, 5.4vw, 84px); line-height: 1; letter-spacing: -0.035em; max-width: 1000px">Privacyverklaring</h1>
+    <p class="yre-up yre-d2" style="margin: clamp(28px, 3vw, 40px) 0 0; max-width: 640px; font-size: 18px; line-height: 1.6">In deze verklaring leest u hoe Y/RE Development omgaat met de persoonsgegevens die u via deze website met ons deelt.</p>
+    <div class="yre-up yre-d3" style="margin-top: clamp(64px, 7vw, 104px); display: flex; flex-direction: column">
+      <div style="display: flex; flex-wrap: wrap; gap: 12px clamp(32px, 5vw, 80px); align-items: flex-start; border-top: 1px solid #121211; padding: 28px 0 32px">
+        <h2 style="flex: 0 0 280px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.015em; line-height: 1.2">Wie wij zijn</h2>
+        <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.65"><p style="margin: 0">Y/RE Development, ingeschreven bij de Kamer van Koophandel onder nummer 94645108, is verantwoordelijk voor de verwerking van uw persoonsgegevens. U kunt ons bereiken via <a href="mailto:info@yre-development.nl" style="border-bottom: 1px solid #121211">info@yre-development.nl</a>.</p></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px clamp(32px, 5vw, 80px); align-items: flex-start; border-top: 1px solid #CFCAC0; padding: 28px 0 32px">
+        <h2 style="flex: 0 0 280px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.015em; line-height: 1.2">Welke gegevens</h2>
+        <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.65"><p style="margin: 0">Als u via ons contactformulier een aanvraag stuurt of ons mailt, ontvangen wij:</p><ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px"><li>uw voor- en achternaam</li><li>uw e-mailadres</li><li>uw organisatie en de rol die u kiest, indien ingevuld</li><li>de inhoud van uw bericht</li></ul></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px clamp(32px, 5vw, 80px); align-items: flex-start; border-top: 1px solid #CFCAC0; padding: 28px 0 32px">
+        <h2 style="flex: 0 0 280px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.015em; line-height: 1.2">Waarvoor</h2>
+        <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.65"><p style="margin: 0">Wij gebruiken deze gegevens alleen om op uw aanvraag te reageren en deze op te volgen. De grondslag hiervoor is ons gerechtvaardigd belang om vragen te beantwoorden van mensen die contact met ons opnemen, of het nemen van stappen op uw verzoek voordat een overeenkomst wordt gesloten.</p></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px clamp(32px, 5vw, 80px); align-items: flex-start; border-top: 1px solid #CFCAC0; padding: 28px 0 32px">
+        <h2 style="flex: 0 0 280px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.015em; line-height: 1.2">Bewaartermijn</h2>
+        <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.65"><p style="margin: 0">Wij bewaren uw gegevens niet langer dan nodig is voor het doel waarvoor ze zijn verzameld. Correspondentie die niet tot een samenwerking leidt, verwijderen wij uiterlijk twee jaar na ons laatste contact.</p></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px clamp(32px, 5vw, 80px); align-items: flex-start; border-top: 1px solid #CFCAC0; padding: 28px 0 32px">
+        <h2 style="flex: 0 0 280px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.015em; line-height: 1.2">Delen van gegevens</h2>
+        <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.65"><p style="margin: 0">Wij verkopen uw persoonsgegevens niet. Wij delen ze alleen met dienstverleners die ons helpen deze website en e-mail te laten werken, zoals onze hostingpartij. Zij verwerken uw gegevens in onze opdracht en op basis van een verwerkersovereenkomst.</p></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px clamp(32px, 5vw, 80px); align-items: flex-start; border-top: 1px solid #CFCAC0; padding: 28px 0 32px">
+        <h2 style="flex: 0 0 280px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.015em; line-height: 1.2">Cookies</h2>
+        <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.65"><p style="margin: 0">Deze website gebruikt geen tracking- of advertentiecookies. Mocht dat veranderen, dan passen wij deze verklaring aan.</p></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px clamp(32px, 5vw, 80px); align-items: flex-start; border-top: 1px solid #CFCAC0; padding: 28px 0 32px">
+        <h2 style="flex: 0 0 280px; margin: 0; font-family: 'Archivo', sans-serif; font-weight: 500; font-size: clamp(20px, 1.8vw, 26px); letter-spacing: -0.015em; line-height: 1.2">Uw rechten</h2>
+        <div style="flex: 1 1 480px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.65"><p style="margin: 0">U heeft het recht om uw persoonsgegevens in te zien, te laten corrigeren of te laten verwijderen, de verwerking te laten beperken of er bezwaar tegen te maken, en het recht op overdraagbaarheid van uw gegevens. Mail ons hiervoor via <a href="mailto:info@yre-development.nl" style="border-bottom: 1px solid #121211">info@yre-development.nl</a>.</p><p style="margin: 0">Bent u niet tevreden over hoe wij met uw gegevens omgaan, dan kunt u een klacht indienen bij de Autoriteit Persoonsgegevens.</p></div>
+      </div>
+      <p style="margin: 0; border-top: 1px solid #CFCAC0; padding-top: 24px; font-size: 13px; color: #5F5B54">Laatst bijgewerkt: oktober 2026</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section style="margin-top: auto; padding-top: clamp(112px, 12vw, 176px)">
+    <div style="background: #121211; color: #F3F1EC">
+      <footer style="max-width: 1440px; margin: 0 auto; padding: 32px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; font-size: 13px; color: #A8A399">
+        <a href="/" aria-label="Y/RE Development — startpagina"><img src="/assets/img/brand/mark-white.png" alt="Y/RE" style="height: 20px; width: auto; display: block"></a>
+        <nav aria-label="Voettekst" style="display: flex; flex-wrap: wrap; gap: 28px">
+          <a href="/projecten" style="color: #D6D2CA">Projecten</a>
+          <a href="/diensten" style="color: #D6D2CA">Onze diensten</a>
+          <a href="/over-ons" style="color: #D6D2CA">Over ons</a>
+          <a href="/contact" style="color: #D6D2CA">Contact</a>
+          <a href="/privacy" style="color: #D6D2CA">Privacy</a>
+        </nav>
+        <span>© 2026 Y/RE Development · KvK 94645108</span>
+      </footer>
+    </div>
+  </section>
+
+</div>
+</template>
+<script type="module">
+import { DCLogic, mount } from '/assets/dc.js';
+
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+
+mount(Component, {});
+</script>
+</body>
+</html>

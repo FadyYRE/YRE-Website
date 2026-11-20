@@ -1,0 +1,46 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/nl/ontwikkeling",
+      "destination": "/diensten",
+      "permanent": true
+    },
+    {
+      "source": "/nl",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/projects",
+      "destination": "/en/projects",
+      "permanent": true
+    },
+    {
+      "source": "/projects/:slug",
+      "destination": "/en/projects/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/development",
+      "destination": "/en/services",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/en/about",
+      "permanent": true
+    },
+    {
+      "source": "/en/development",
+      "destination": "/en/services",
+      "permanent": true
+    }
+  ]
+}

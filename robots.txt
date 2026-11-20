@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yre-development.nl/sitemap.xml
